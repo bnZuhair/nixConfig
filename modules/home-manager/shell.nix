@@ -31,6 +31,9 @@
 	 v = "nvim";
 	 t = "tmux";
 	 e = "exit";
+	 gs = "git status";
+	 b = "../";
+	 bb = "../../";
     };
    };
    # starship
