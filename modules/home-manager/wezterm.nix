@@ -5,7 +5,8 @@
     pkgs.wezterm
   ];
 
-  xdg.configFile.".config/wezterm/.wezterm.lua".source = ./wezterm.lua;
-  #home.file."./.wezterm.lua".source = ./wezterm.lua;
+  #xdg.configFile."./wezterm/.wezterm.lua".source = ./wezterm.lua;
+  home.file."./.wezterm.lua".source = ./wezterm.lua;
+	
 
 }

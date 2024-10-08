@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+imports = [ ./zellij.nix ];
 
   programs = {
    git = {
@@ -66,22 +67,6 @@
 #	prefix = "M-Space"
 #
 #};
-    zellij = {
-	enable = true;
-	enableZshIntegration = true;
-	enableBashIntegration = true;
-	settings = {
-		simplified_ui = true;
-		pane_frames = false;
-		theme = "Catppuccin Macchiato";
-#expermental
-		pane_viewport_serialization = true;
-#later
-		#default_layout = "compact";
-		#layout_dir ="/path/to/my/layout_dir";
-		#theme_dir ="/path/to/my/layout_dir";
-	};
-};
 };
 	
 
