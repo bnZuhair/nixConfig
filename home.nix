@@ -38,7 +38,7 @@
      enable = true;
      autocd = true;
      dotDir = ".config/zsh";
-     history.path = ".config/zsh/.zsh_history";
+     history.path = "$HOME/.config/zsh/.zsh_history";
      history.ignoreSpace = false;
      autosuggestion.enable = true;
      syntaxHighlighting.enable = true;
