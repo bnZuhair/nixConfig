@@ -1,12 +1,14 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = [
-    pkgs.wezterm
-  ];
-
-  #xdg.configFile."./wezterm/.wezterm.lua".source = ./wezterm.lua;
-  home.file."./.wezterm.lua".source = ./wezterm.lua;
+  programs.wezterm = {
+	enable = true;
+	enableZshIntegration = true;
+	enableBashIntegration = true;
+	extraConfig = ''
+	${builtins.readFile ./wezterm.lua}
+	'';
+};
 	
 
 }
