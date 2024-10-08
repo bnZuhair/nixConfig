@@ -8,13 +8,12 @@
 
   imports = [
      ./modules/home-manager/shell.nix
+     ./modules/home-manager/wezterm.nix
   ];
 
-  home.packages = [
+  home.packages = with pkgs; [
     # font
-    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-    pkgs.wezterm
-
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
   home.file = {
