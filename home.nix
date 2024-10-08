@@ -12,8 +12,6 @@
   ];
 
   home.packages = with pkgs; [
-    # font
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
   home.file = {
@@ -31,6 +29,7 @@
    home-manager.enable = true;# Let Home Manager install and manage itself.
  };
 
+    xdg.enable = true;
 }
 
 
