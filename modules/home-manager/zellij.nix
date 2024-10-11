@@ -15,6 +15,8 @@
 		#default_layout = "compact";
 		#layout_dir ="/path/to/my/layout_dir";
 		#theme_dir ="/path/to/my/layout_dir";
+		#use this to configue the bar
+		#https://haseebmajid.dev/posts/2024-07-26-how-i-configured-zellij-status-bar/
 	};
 };
 }
