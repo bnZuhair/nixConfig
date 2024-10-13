@@ -1,8 +1,9 @@
 {
   imports = [ 
-	./aesthetics.nix
-	./options.nix
-	./oil.nix
-	./keymaps.nix
+		./aesthetics.nix
+		./options.nix
+		./oil.nix
+		./keymaps.nix
+		./lsp.nix
 	];
 }
