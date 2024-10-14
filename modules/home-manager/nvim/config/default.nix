@@ -6,5 +6,6 @@
 		./keymaps.nix
 		./lsp.nix
 		./autocommands.nix
+		./gitsigns.nix
 	];
 }
