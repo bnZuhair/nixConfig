@@ -5,5 +5,6 @@
 		./oil.nix
 		./keymaps.nix
 		./lsp.nix
+		./autocommands.nix
 	];
 }
