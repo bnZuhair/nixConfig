@@ -7,5 +7,6 @@
 		./lsp.nix
 		./autocommands.nix
 		./gitsigns.nix
+		./conform.nix
 	];
 }
