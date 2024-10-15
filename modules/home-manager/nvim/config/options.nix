@@ -28,10 +28,8 @@
      splitright = true;
      splitbelow = true;
 
-     list = true;
-     listchars.trail = "·";
-     listchars.nbsp = "␣";
-     listchars.tab= "» ";
+     #list = true;
+     #listchars.nbsp = "␣";
 
      tabstop = 3;
      shiftwidth = 3;
