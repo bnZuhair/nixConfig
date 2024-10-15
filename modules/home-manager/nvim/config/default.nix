@@ -9,5 +9,6 @@
 		./gitsigns.nix
 		./conform.nix
 		./undotree.nix
+		./telescope.nix
 	];
 }
