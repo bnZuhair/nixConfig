@@ -8,5 +8,6 @@
 		./autocommands.nix
 		./gitsigns.nix
 		./conform.nix
+		./undotree.nix
 	];
 }
