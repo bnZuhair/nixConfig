@@ -13,6 +13,7 @@
 
   home.packages = with pkgs; [
 	xclip
+	ripgrep
   ];
 
   home.file = {
