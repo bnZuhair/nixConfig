@@ -92,6 +92,16 @@
 				 "node_modules"
 			  ];
 			  set_env.COLORTERM = "truecolor";
+			  sorting_strategy = "ascending";
+
+			  layout_strategy = "horizontal";
+			  layout_config = {
+				 width = 0.999;
+				 height = 0.999;
+				 preview_width = 0.5;
+				 preview_cutoff = 100;
+			  };
+
 			};
       };
     };
