@@ -1,7 +1,7 @@
 {
   imports = [
     #general
-    ./looks.nix
+    ./ui.nix
     ./options.nix
     ./keymaps.nix
     ./autocommands.nix
