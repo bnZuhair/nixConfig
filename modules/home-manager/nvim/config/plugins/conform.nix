@@ -47,7 +47,6 @@
           ]
         ];
         lua = [ "stylua" ];
-        nix = [ "nixfmt" ];
         markdown = [
           [
             "prettierd"

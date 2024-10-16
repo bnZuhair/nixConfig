@@ -14,8 +14,10 @@
 		./plugins/undotree.nix
 		./plugins/telescope.nix
 		./plugins/autopairs.nix
+		./plugins/none-ls.nix
 
 		#language specific
 		./languages/python.nix
+		./languages/nix.nix
 	];
 }
