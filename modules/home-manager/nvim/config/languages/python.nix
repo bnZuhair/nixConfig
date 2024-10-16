@@ -1,6 +1,9 @@
-{
+{ lib, pkgs, ... }: {
   config.plugins.conform-nvim = {
-    settings = { formatters_by_ft = { python = [ "black" ]; }; };
+    settings = {
+      formatters_by_ft = { python = [ "black" ]; };
+      formatters = { black = { command = "${lib.getExe pkgs.black}"; }; };
+    };
   };
   #config.plugins.lsp = {
   #	servers.pyright = {
@@ -14,5 +17,4 @@
       settings.plugins.black.enabled = true;
     };
   };
-  config.plugins.none-ls.sources.formatting.black.enable = true;
 }
