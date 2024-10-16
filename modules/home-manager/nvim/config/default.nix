@@ -16,6 +16,7 @@
     ./plugins/autopairs.nix
     ./plugins/none-ls.nix
     ./plugins/treesitter.nix
+    ./plugins/nvim-cmp.nix
 
     #language specific
     ./languages/python.nix
