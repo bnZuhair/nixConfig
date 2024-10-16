@@ -9,6 +9,7 @@
   imports = [
      ./modules/home-manager/shell.nix
      ./modules/home-manager/wezterm/wezterm.nix
+     ./modules/home-manager/languages.nix
   ];
 
   home.packages = with pkgs; [

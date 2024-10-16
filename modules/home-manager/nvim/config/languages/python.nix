@@ -6,9 +6,16 @@
 			};
 		};
 	};
+	#config.plugins.lsp = {
+	#	servers.pyright = {
+	#		enable = true;
+	#		settings.plugins.black.enabled = true;
+   #   };
+   #};
 	config.plugins.lsp = {
-		servers = {
-			pyright.enable = true;
+		servers.pylsp = {
+			enable = true;
+			settings.plugins.black.enabled = true;
       };
    };
 }
