@@ -46,7 +46,6 @@
             "prettier"
           ]
         ];
-        python = [ "black" ];
         lua = [ "stylua" ];
         nix = [ "nixfmt" ];
         markdown = [

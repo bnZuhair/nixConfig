@@ -16,5 +16,6 @@
 		./plugins/autopairs.nix
 
 		#language specific
+		./languages/python.nix
 	];
 }
