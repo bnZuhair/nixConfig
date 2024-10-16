@@ -1,15 +1,20 @@
 {
   imports = [ 
-		./aesthetics.nix
+		#general
+		./looks.nix
 		./options.nix
 		./keymaps.nix
-		./oil.nix
-		./lsp.nix
 		./autocommands.nix
-		./gitsigns.nix
-		./conform.nix
-		./undotree.nix
-		./telescope.nix
-		./autopairs.nix
+		
+		#plugins
+		./plugins/oil.nix
+		./plugins/lsp.nix
+		./plugins/gitsigns.nix
+		./plugins/conform.nix
+		./plugins/undotree.nix
+		./plugins/telescope.nix
+		./plugins/autopairs.nix
+
+		#language specific
 	];
 }
