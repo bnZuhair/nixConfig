@@ -29,16 +29,18 @@
         ll = "ls -l";
         v = "nvim";
         t = "tmux";
-        e = "exit";
-        gs = "git status";
-        b = "../";
-        bb = "../../";
       };
       zsh-abbr = {
         enable = true;
         abbreviations = {
           c = "clear";
-
+          gs = "git status";
+          ga = "git add";
+          gc = "git commit";
+          gco = "git checkout";
+          e = "exit";
+          b = "../";
+          bb = "../../";
         };
       };
     };
