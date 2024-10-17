@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 {
+  imports = [ ./zellij.nix ];
   programs = {
     git = {
       enable = true;

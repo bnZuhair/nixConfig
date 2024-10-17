@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./zellij.nix
     ./shell_tools.nix
   ];
   programs = {
@@ -28,13 +27,19 @@
       };
       shellAliases = {
         ll = "ls -l";
-        c = "clear";
         v = "nvim";
         t = "tmux";
         e = "exit";
         gs = "git status";
         b = "../";
         bb = "../../";
+      };
+      zsh-abbr = {
+        enable = true;
+        abbreviations = {
+          c = "clear";
+
+        };
       };
     };
   };

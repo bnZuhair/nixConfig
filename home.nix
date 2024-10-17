@@ -7,8 +7,8 @@
   home.stateVersion = "24.05"; # don't change
 
   imports = [
-    #./modules/home-manager/zsh.nix
-    ./modules/home-manager/fish.nix
+    ./modules/home-manager/zsh.nix
+    #./modules/home-manager/fish.nix
     ./modules/home-manager/wezterm/wezterm.nix
   ];
 
