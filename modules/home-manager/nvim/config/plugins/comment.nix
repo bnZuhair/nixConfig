@@ -1,3 +1,20 @@
+{ config, lib, ... }:
 {
   config.plugins.comment.enable = true;
+  config.plugins.todo-comments = {
+    enable = true;
+    keymaps = {
+      todoTrouble.key = lib.mkIf config.plugins.trouble.enable "<leader>xq";
+      todoTelescope = lib.mkIf config.plugins.telescope.enable {
+        key = "<leader>ft";
+        keywords = [
+          "TODO"
+          "FIX"
+          "WARNING"
+          "NOTE"
+          "HACK"
+        ];
+      };
+    };
+  };
 }
