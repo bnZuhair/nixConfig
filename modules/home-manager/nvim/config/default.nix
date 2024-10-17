@@ -17,6 +17,7 @@
     ./plugins/treesitter.nix
     ./plugins/nvim-cmp.nix
     ./plugins/surround.nix
+    ./plugins/comment.nix
 
     #language specific
     ./languages/python.nix

@@ -9,7 +9,9 @@
         end
       '';
 
-      completion = { completeopt = "menu,menuone,noinsert"; };
+      completion = {
+        completeopt = "menu,menuone,noinsert";
+      };
 
       mapping = {
         "<C-n>" = "cmp.mapping.select_next_item()";
@@ -45,10 +47,20 @@
     };
   };
   config.plugins = {
-    cmp-nvim-lsp = { enable = true; }; # lsp
-    cmp-buffer = { enable = true; };
-    cmp-path = { enable = true; }; # file system paths
-    cmp_luasnip = { enable = true; }; # snippets
-    cmp-cmdline = { enable = false; };
+    cmp-nvim-lsp = {
+      enable = true;
+    }; # lsp
+    cmp-buffer = {
+      enable = true;
+    };
+    cmp-path = {
+      enable = true;
+    }; # file system paths
+    cmp_luasnip = {
+      enable = true;
+    }; # snippets
+    cmp-cmdline = {
+      enable = false;
+    };
   };
 }
