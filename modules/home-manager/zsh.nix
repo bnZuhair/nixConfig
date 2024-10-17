@@ -3,10 +3,9 @@
 {
   imports = [
     ./zellij.nix
-    ./git.nix
+    ./shell_tools.nix
   ];
   programs = {
-    # shell
     # zsh
     zsh = {
       enable = true;
@@ -38,35 +37,6 @@
         bb = "../../";
       };
     };
-    # starship
-    starship = {
-      enable = true;
-      enableZshIntegration = true;
-      enableBashIntegration = true;
-      settings = {
-        add_newline = false;
-        character = {
-          success_symbol = "[❯](green)";
-          error_symbol = "[❯](red)";
-          vicmd_symbol = "[❮](green)";
-        };
-      };
-    };
-
-    fzf = {
-      enable = true;
-      enableZshIntegration = true;
-      enableBashIntegration = true;
-      #tmux.enableShellIntegration = true;
-      #tmux.shellIntegrationOptions = [];
-    };
-    #   tmux = {
-    #	enable = true;
-    #	keyMode = "vi";
-    #	mouse = true;
-    #	prefix = "M-Space"
-    #
-    #};
   };
 
 }
