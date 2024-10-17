@@ -17,6 +17,7 @@
     ./plugins/none-ls.nix
     ./plugins/treesitter.nix
     ./plugins/nvim-cmp.nix
+    ./plugins/surround.nix
 
     #language specific
     ./languages/python.nix
