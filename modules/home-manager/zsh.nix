@@ -20,6 +20,9 @@
         "root"
       ];
       historySubstringSearch.enable = true;
+      completionInit = ''
+        autoload -U compinit && compinit
+      '';
       prezto = {
         enable = false;
         editor.keymap = "vi";
