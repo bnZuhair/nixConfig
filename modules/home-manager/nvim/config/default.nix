@@ -18,6 +18,7 @@
     ./plugins/nvim-cmp.nix
     ./plugins/surround.nix
     ./plugins/comment.nix
+    ./plugins/harpoon.nix
 
     #language specific
     ./languages/python.nix
