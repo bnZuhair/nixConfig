@@ -4,7 +4,7 @@
   imports = [
     ./shell_tools.nix
   ];
-  programs = {
+  config.programs = {
     # zsh
     zsh = {
       enable = true;
@@ -12,22 +12,30 @@
       dotDir = ".config/zsh";
       history.path = "$HOME/.config/zsh/.zsh_history";
       history.ignoreSpace = false;
-      autosuggestion.enable = true;
-      syntaxHighlighting.enable = true;
-      syntaxHighlighting.highlighters = [
-        "main"
-        "brackets"
-        "root"
-      ];
-      historySubstringSearch.enable = true;
+      zplug = {
+        enable = true;
+        zplugHome = "${config.home.homeDirectory}/.config/zsh/.zplug";
+        plugins = [
+          { name = "zsh-users/zsh-completions"; }
+          {
+            name = "zsh-users/zsh-history-substring-search";
+            tags = [ "as:plugin" ];
+          }
+          {
+            name = "lib/completion";
+            tags = [ "from:oh-my-zsh" ];
+          }
+          { name = "zsh-users/zsh-autosuggestions"; }
+          { name = "jeffreytse/zsh-vi-mode"; }
+          {
+            name = "zsh-users/zsh-syntax-highlighting";
+            tags = [ "defer:2" ];
+          }
+        ];
+      };
       completionInit = ''
         autoload -U compinit && compinit
       '';
-      prezto = {
-        enable = false;
-        editor.keymap = "vi";
-        caseSensitive = false;
-      };
       shellAliases = {
         ll = "ls -l";
         v = "nvim";
@@ -46,7 +54,11 @@
           bb = "../../";
         };
       };
+      initExtra = ''
+        bindkey '^[[A' history-substring-search-up
+        bindkey '^[[B' history-substring-search-down
+        bindkey '^[[1;5C' forward-word
+      '';
     };
   };
-
 }
