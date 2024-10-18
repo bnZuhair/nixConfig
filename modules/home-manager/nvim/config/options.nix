@@ -1,38 +1,39 @@
-{lib, pkgs, ...}:
+{ lib, pkgs, ... }:
 
 {
-   config.globals = {
-	mapleader = " ";
-	maplocalleader = " ";
-	have_nerd_font = true;
-   };
-   config.opts = {
-     number = true;
-     relativenumber = true;
+  config.globals = {
+    mapleader = " ";
+    maplocalleader = " ";
+    have_nerd_font = true;
+  };
+  config.opts = {
+    number = true;
+    relativenumber = true;
 
-     mouse = "a";
+    mouse = "a";
 
-     showmode = false;
+    showmode = false;
 
-     breakindent = true;
+    breakindent = true;
 
-     undofile = true;
+    undofile = true;
 
-     ignorecase = true;
-     smartcase = true;
-     signcolumn = "yes";
+    ignorecase = true;
+    smartcase = true;
+    signcolumn = "yes";
 
-     updatetime = 250;
-     timeoutlen = 300;
+    updatetime = 250;
+    timeoutlen = 300;
 
-     splitright = true;
-     splitbelow = true;
+    splitright = true;
+    splitbelow = true;
 
-     #list = true;
-     #listchars.nbsp = "␣";
+    list = true;
+    listchars.nbsp = "␣";
 
-     tabstop = 3;
-     shiftwidth = 3;
-     softtabstop = 3;
-   };
+    expandtab = true;
+    tabstop = 3;
+    shiftwidth = 3;
+    softtabstop = 3;
+  };
 }

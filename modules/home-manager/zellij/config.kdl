@@ -11,7 +11,7 @@ keybinds clear-defaults=true {
     }
 
     resize clear-defaults=true {
-        bind "Alt n" "Esc" "Ctrl {" { SwitchToMode "Normal"; }
+        bind "Alt r" "Esc" "Ctrl {" { SwitchToMode "Normal"; }
 
         bind "h" "Left" { Resize "Increase Left"; }
         bind "j" "Down" { Resize "Increase Down"; }
@@ -77,7 +77,7 @@ keybinds clear-defaults=true {
     }
 
     scroll clear-defaults=true {
-        bind "Alt o" "Esc" "Ctrl {" { SwitchToMode "Normal"; }
+        bind "Alt f" "Esc" "Ctrl {" { SwitchToMode "Normal"; }
 
         bind "e" { EditScrollback; SwitchToMode "Normal"; }
         bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
@@ -91,7 +91,7 @@ keybinds clear-defaults=true {
     }
 
     search clear-defaults=true {
-        bind "Alt o" "Esc" "Ctrl {" { SwitchToMode "Normal"; }
+        bind "Alt f" "Esc" "Ctrl {" { SwitchToMode "Normal"; }
 
         bind "Ctrl c" "Esc" "Ctrl {" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "j" "Down" { ScrollDown; }
@@ -123,9 +123,9 @@ keybinds clear-defaults=true {
     }
 
     session clear-defaults=true {
-        bind "Alt o" "Esc" "Ctrl {" { SwitchToMode "Normal"; }
+        bind "Alt s" "Esc" "Ctrl {" { SwitchToMode "Normal"; }
 
-        bind "Alt o" { SwitchToMode "Scroll"; }
+        bind "Alt f" { SwitchToMode "Scroll"; }
         bind "d" { Detach; }
         bind "w" {
             LaunchOrFocusPlugin "zellij:session-manager" {
@@ -187,17 +187,17 @@ keybinds clear-defaults=true {
 
     shared_except "resize" "locked" {
         unbind "Ctrl n"
-        bind "Alt n" { SwitchToMode "Resize"; }
+        bind "Alt r" { SwitchToMode "Resize"; }
     }
 
     shared_except "scroll" "locked" {
         unbind "Ctrl s"
-        bind "Alt o" { SwitchToMode "Scroll"; }
+        bind "Alt f" { SwitchToMode "Scroll"; }
     }
 
     shared_except "session" "locked" {
         unbind "Ctrl o"
-        bind "Alt o" { SwitchToMode "Session"; }
+        bind "Alt s" { SwitchToMode "Session"; }
     }
 
     shared_except "tab" "locked" {
