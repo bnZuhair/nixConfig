@@ -23,5 +23,6 @@
     #language specific
     ./languages/python.nix
     ./languages/nix.nix
+    ./languages/html_css_js_ts.nix
   ];
 }
