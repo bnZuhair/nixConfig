@@ -37,13 +37,14 @@
         autoload -U compinit && compinit
       '';
       shellAliases = {
-        ll = "ls -l";
         v = "nvim";
         t = "tmux";
       };
       zsh-abbr = {
         enable = true;
         abbreviations = {
+          ll = "ls -la";
+          l = "ls -a";
           c = "clear";
           gs = "git status";
           ga = "git add";
