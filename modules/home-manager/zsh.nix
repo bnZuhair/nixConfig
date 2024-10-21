@@ -43,8 +43,8 @@
       zsh-abbr = {
         enable = true;
         abbreviations = {
-          ll = "ls -la";
           l = "ls -a";
+          ll = "ls -la";
           c = "clear";
           gs = "git status";
           ga = "git add";
